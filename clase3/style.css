@@ -1,0 +1,224 @@
+/* ----------------------------------------------------------------------------------------------------------- */
+/* GENERAL */
+
+:root{
+   --blanco: #ffffff;
+   --gris:#757575;
+   --gris_claro:#dfe9f3;
+   --negro: #212121;
+   --primary: #a255ff;
+   --secundary: #4ea700;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    /*font-family: 'Bungee Spice', cursive;*/
+    margin: 0px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+   
+    /*Linea para que la imagen se ajuste a la pagina*/
+    /*background-size: cover;*/ 
+
+    /*Codigo para aplicar dos o mas tonos de color en el fondo con un degradado*/
+    /*background: linear-gradient(90deg, rgba(198,1,71,1) 0%, rgba(226,22,50,1) 19%, rgba(34,9,223,1) 100%);*/ 
+
+    /*Codigo para aplicar el degradado de dos colores pero con las variables de colores*/
+    background-image: linear-gradient(var(--blanco),var(--gris_claro));
+}
+
+/*Sintaxis para declarar ina CLASE*/
+.morado{
+    color: #a255ff;
+}
+
+/*Sintaxis para declarar un ID*/
+#subTitulo{
+    color: #58bcff;
+}
+
+/*Codigo para aplicar colores a un parrafo con las variables*/
+p{
+    /*color:var(--secundary)*/
+}
+
+.contenedor{
+    width: 1200px;
+    margin: auto;
+    border: #212121;
+}
+
+/* FIN GENERAL */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* TITULO */
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: var(--primary);
+}
+
+h2{
+    border: #212121 solid 1px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 20px 5px 30px; /*Se pueden pasar los 4 parametros de izq, arriba, der, abajo*/
+    margin: 20px 15px;
+}
+
+h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+#textoSpan
+{
+    font-size: 20px;
+}
+/*FIN DE TITULOS*/
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/*NAVEGACION*/
+
+.nav_bg{
+    background-color: var(--secundary);
+}
+
+.nav_principal{
+    display: flex;/*Automaticamente ajusta el tamaño de todos los hijos del nav bar*/
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav_principal a{
+    color:var(--blanco);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav_principal a:hover{ /*Hove es para cambiar el color o animacion al pasar el cursor del mouse por encima de ese objeto*/
+    color: var(--negro);
+    background-color: var(--primary);
+}
+
+/*FIN NAVEGACION*/
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/*INFORMACION*/
+
+.imagen{
+    height: 450px;
+    background-image:url(img/logo.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.info{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p{
+    text-align: center;
+    padding: 40px;
+}
+
+/*FIN INFORMACION*/
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/*SERVICIOS*/
+
+.contenido{
+    background-color: var(--blanco);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.5);
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%; /*DISTRIBUIR TODO EL GRID EN COLUMNAS*/
+    grid-template-columns: 1fr 1fr 1fr; /*DISTRIBUIR TODO EL GRID EN COLUMNAS CON FRACCIONES ES IGUAL AL %*/
+    column-gap: 20px;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundary);
+}
+
+.servicio img{
+    height: 300px;
+    width: 300px;
+    border: var(--primary) dashed;
+    border-radius: 150px;
+}
+
+.servicio p{
+    text-align: justify;
+}
+
+/*FIN DE SERVICIOS*/
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/*FOOTER*/
+
+footer{
+    text-align: center;
+}
+
+/*FIN FOOTER*/
+
+/*PRODUCTOS*/
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.producto{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: solid var(--negro);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.producto img{
+    height: 300px;
+    width: 300px;
+}
+
+.producto h3{
+    color: var(--secundary); 
+    text-decoration: underline;
+}
+
+.producto p{
+    color: var(--secundary);
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/*FIN PRODUCTOS*/
+
