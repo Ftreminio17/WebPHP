@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <img src="img/dom.png">
+   <script>
+       //alert("Hola Mundo")
+       document.write("Que es el dom?")
+       document.write("<p></p>")
+       document.write("<img src=\"img/dom.png\"alt=\"Dom\">")
+       //Variables
+       document.write("Los tipos de datos: String, Number, Boolean, Null y Undefined => son tipos de datos primitivos <br>")
+        var miVariable;
+        miVariable = 77;
+        document.write("El valor de mi variable es: "+miVariable + " y el tipo de dato es: " + typeof miVariable + "<br><br>");
+        miVariable = "gatos";
+        document.write("El valor de mi variable es: "+miVariable + " y el tipo de dato es: " + typeof miVariable + "<br><br>");
+        miVariable = true;
+        document.write("El valor de mi variable es: "+miVariable + " y el tipo de dato es: " + typeof miVariable + "<br><br>");
+
+        document.write("La cantidad de caracteres de mi variable es: "+ miVariable.length + "<br><br>");
+
+        document.write("Los tipos de datos: Object, Array, Function, Date y RegExp => son tipos de datos de referencia, es decir, son objetos.");
+        var miObjeto = new String("Los Patos");
+        document.write("El valor de mi variable es: "+miObjeto + " y el tipo de dato es: " + typeof miObjeto + "<br><br>");
+   </script>
+
+</body>
+
+</html>

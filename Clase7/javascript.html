@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <label for="edad">Digite su edad</label>
+        <input type="number" id="edad">
+        <input type="button" value="Continuar" onclick="evaluar()">
+    </div>
+
+    <br>
+
+    <div>
+        <form action="" name="form1">
+            <input type="checkbox" id="req1">
+            <label for="req1">Requisito 1</label>
+
+            <input type="checkbox" id="req2">
+            <label for="req2">Requisito 2</label>
+
+            <input type="button" value="Matricular" onclick="comprobar()">
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="edadtxt">Digite su edad</label>
+        <input type="number" id="edadtxt">
+        <input type="button" value="Continuar" onclick="evaluarSwitch()">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="edad">Seleccione un mes:</label>
+        <select id="mes">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+        <input type="button" value="Validar" onclick="evaluarMes()">
+    </div>
+
+    <div>
+        <label for="Digite un numero">Digite un numero</label>
+        <input type="number" id="num">
+        <input type="button" value="Multiplicar" onclick="tabla()">
+    </div>
+
+    <div id="ciclos"></div>
+
+    <div id="arreglos"></div>
+
+    <div id="respuesta">
+
+    </div>
+
+    <script src="js/javascript.js"> </script>
+
+</body>
+
+</html>
