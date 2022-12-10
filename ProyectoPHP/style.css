@@ -29,6 +29,14 @@ body {
     margin: auto;
 }
 
+.contenido {
+  background-color: var(--blanco);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.5);
+}
+
 .boton {
     color: var(--blanco);
     background-color: var(--secundary);
@@ -123,14 +131,6 @@ h3 {
 /* Fin Informacion */
 
 /* Servicios */
-
-.contenido {
-    background-color: var(--blanco);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.5);
-}
 
 .servicios {
     display: grid;
@@ -789,3 +789,11 @@ span{
   background-size: cover;
   background-position: center;
 }
+
+/* login */
+
+.login {
+  height: 100%;
+}
+
+/* Fin login */
