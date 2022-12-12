@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <title>ElectroComp</title>
+    <title>Deportes CR</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             <a href="../contacto.html">Contacto</a>
             <a href="../php/productoN.php">Agregar Producto</a>
             <a href="../productos.html">Productos</a>
-            <a href="../login.html">Login</a>
+            <a href="../loginN.php">Login</a>
         </nav>
     </div>
 
